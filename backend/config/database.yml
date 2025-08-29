@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: 127.0.0.1
+  port: 5432
+  username: starlog_user
+  password: 44xstd6f
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: starlog_development
+
+test:
+  <<: *default
+  database: starlog_test
+
+production:
+  <<: *default
+  database: starlog_production
+  username: <%= ENV["STARLOG_DATABASE_USER"] %>
+  password: <%= ENV["STARLOG_DATABASE_PASSWORD"] %>
