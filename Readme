@@ -51,7 +51,7 @@ starlog/
 └── README.md
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Ruby (>= 3.2)  
@@ -63,10 +63,9 @@ starlog/
 ### Setup
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/YourUsername/starlog.git
    cd starlog
-   ```
 
 2.Install backend dependencies:
 
