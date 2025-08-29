@@ -42,12 +42,16 @@ focusing on building a clean and secure CRUD API, while integrating it with a Vu
 
 ## Project Structure
 starlog/
+
 │
 ├── backend/ # Ruby on Rails API (CRUD, Auth, PostgreSQL)
+
 │
 ├── frontend/ # Vue 3 + Vite + Pinia + Vue Router
+
 │
 ├── package.json # Concurrently scripts to run backend + frontend together
+
 └── README.md
 ---
 
