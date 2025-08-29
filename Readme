@@ -1,0 +1,96 @@
+# Starlog
+
+Starlog is a participatory blog platform built with **Ruby on Rails (API-only)**, **PostgreSQL**, 
+and **Vue 3 (Vite + Pinia + Vue Router)**.
+
+The goal of this project is not only to create a modern and secure blog platform, 
+but also to serve as a learning journey for practicing **Ruby on Rails** as a backend framework, 
+focusing on building a clean and secure CRUD API, while integrating it with a Vue.js frontend.
+
+---
+
+## Features
+
+- **User Authentication**  
+  - Implemented with Devise + JWT for secure token-based authentication.  
+  - Role management (admin, editor, user).  
+
+- **Articles**  
+  - Admins and editors can create, update, and delete articles.  
+  - Users can browse all articles and view details.  
+
+- **Comments**  
+  - Connected users can leave comments under articles.  
+  - Admins can moderate and delete inappropriate comments.  
+
+- **Ratings**  
+  - Users can rate articles from 1 to 5 stars.  
+  - Average rating is displayed on each article.  
+
+---
+
+## Tech Stack
+
+- **Backend**: Ruby on Rails (API-only)  
+- **Database**: PostgreSQL  
+- **Authentication**: Devise + devise-jwt  
+- **Frontend**: Vue 3 (Vite, Pinia, Vue Router)  
+- **Communication**: REST API with native fetch  
+- **Development Environment**: VS Code (Ruby, Rails, Vue, PostgreSQL extensions)  
+
+---
+
+## Project Structure
+starlog/
+│
+├── backend/ # Ruby on Rails API (CRUD, Auth, PostgreSQL)
+│
+├── frontend/ # Vue 3 + Vite + Pinia + Vue Router
+│
+├── package.json # Concurrently scripts to run backend + frontend together
+└── README.md
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Ruby (>= 3.2)  
+- Rails (>= 7)  
+- PostgreSQL  
+- Node.js (LTS)  
+- npm  
+
+### Setup
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/YourUsername/starlog.git
+   cd starlog
+   ```
+
+2.Install backend dependencies:
+
+```bash
+cd backend
+bundle install
+rails db:create
+```
+3.Install frontend dependencies:
+
+```bash
+cd ../frontend
+npm install
+```
+4.Start backend & frontend together (from project root):
+
+
+```bash
+Copier le code
+cd ..
+npm run dev
+
+```
+
+### Rails API runs on http://localhost:3000
+
+### Vue frontend runs on http://localhost:5173
